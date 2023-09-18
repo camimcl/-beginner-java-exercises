@@ -1,28 +1,30 @@
+import java.util.Objects;
+
 public class ShippingTaxes {
     private String location;
     private double tax;
 
     public void setLocationTax(String location){
-        if (location == "europe"){
+        if (Objects.equals(location, "europe")){
             tax = 35;
         }
-        else if (location == "north america"){
+        else if (Objects.equals(location, "north america")){
             tax= 5;
         }
-        else if (location == "south america"){
+        else if (Objects.equals(location, "south america")){
             tax=25;
         }
-        else if (location == "asia"){
+        else if (Objects.equals(location, "asia")){
             tax=30;
         }
-        else if (location == "oceania"){
+        else if (Objects.equals(location, "oceania")){
             tax= 45;
         }
-        else if (location == "africa"){
+        else if (Objects.equals(location, "africa")){
             tax=35;
         }
-        else{
-            tax = 15.5;
+        else {
+            tax=15;
         }
     }
 
