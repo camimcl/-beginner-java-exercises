@@ -24,12 +24,12 @@ public class Main {
         double productPrice = sc.nextDouble();
 
         System.out.println("Select your location:");
-        System.out.println("1-Europe");
-        System.out.println("2-North America");
-        System.out.println("3-South America");
-        System.out.println("4-Oceania");
-        System.out.println("5-Asia");
-        System.out.println("6-Africa");
+        System.out.println("Europe");
+        System.out.println("North America");
+        System.out.println("South America");
+        System.out.println("Oceania");
+        System.out.println("Asia");
+        System.out.println("Africa");
         String clientLocation = location.nextLine();
         shippingtaxes.setLocationTax(clientLocation);
 
