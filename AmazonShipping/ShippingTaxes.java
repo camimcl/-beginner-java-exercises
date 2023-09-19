@@ -5,22 +5,22 @@ public class ShippingTaxes {
     private double tax;
 
     public void setLocationTax(String location){
-        if (Objects.equals(location, "europe")){
+        if (location.equalsIgnoreCase ("europe")){
             tax = 35;
         }
-        else if (Objects.equals(location, "north america")){
+        else if (location.equalsIgnoreCase("north america")){
             tax= 5;
         }
-        else if (Objects.equals(location, "south america")){
+        else if (location.equalsIgnoreCase( "south america")){
             tax=25;
         }
-        else if (Objects.equals(location, "asia")){
+        else if (location.equalsIgnoreCase( "asia")){
             tax=30;
         }
-        else if (Objects.equals(location, "oceania")){
+        else if (location.equalsIgnoreCase( "oceania")){
             tax= 45;
         }
-        else if (Objects.equals(location, "africa")){
+        else if (location.equalsIgnoreCase( "africa")){
             tax=35;
         }
         else {
