@@ -13,22 +13,15 @@ class Calculator {
         return a * b;
     }
 
-    public double divide(double a, double b) {
-        if (b == 0) {
-            // throw error
-        }
-
-        return a / b;
-    }
+    public double divide(double a, double b) { return a / b;} // if (b == 0) throw error
 }
 
 public class Main {
     private static Scanner scanner = new Scanner(System.in);
-
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
-
         boolean first_run = true;
+
         while (true) {
             if (!first_run) {
                 System.out.println("Do you want to make another operation?");
@@ -71,19 +64,13 @@ public class Main {
                     } else {
                         result = calculator.divide(a, b);
                     }
-
                     break;
                 case 4:
                     result = calculator.multiply(a, b);
                     break;
             }
-
             if (!error_occurred) {
                 System.out.println("The answer is: " + result);
-            }
-
-            if (first_run) {
-                first_run = false;
             }
         }
     }
