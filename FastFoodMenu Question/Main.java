@@ -20,7 +20,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Menu menu = new Menu();
         int error = 1;
-        while (error == 1){
+        while (error){
         System.out.println("--MENU--");
         System.out.println("Burguer");
         System.out.println("Pizza");
